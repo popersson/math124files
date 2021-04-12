@@ -1,0 +1,401 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13581,        393]
+NotebookOptionsPosition[     11992,        366]
+NotebookOutlinePosition[     12334,        381]
+CellTagsIndexPosition[     12291,        378]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ StyleBox["Math 124 - Programming for Mathematical Applications\n",
+  FontSize->24,
+  FontWeight->"Bold"],
+ "UC Berkeley, Spring 2021\n\n",
+ StyleBox["Homework 12\n",
+  FontSize->18,
+  FontWeight->"Bold"],
+ "Due Friday April 28\n"
+}], "Text",
+ CellChangeTimes->{{3.7640904110338516`*^9, 3.7640904498870535`*^9}, {
+  3.764090541800277*^9, 3.764090579122822*^9}, {3.7640906222464743`*^9, 
+  3.7640906489997272`*^9}},ExpressionUUID->"5dc15284-732d-4441-9989-\
+a205be82a196"],
+
+Cell[TextData[{
+ StyleBox["Problem 1\n",
+  FontWeight->"Bold"],
+ "It is well known that ",
+ Cell[BoxData[
+  RowBox[{
+   UnderoverscriptBox["\[Sum]", 
+    RowBox[{"i", "=", "1"}], "n"], "i"}]],
+  CellChangeTimes->{{3.764071908830346*^9, 3.764071937203559*^9}},
+  ExpressionUUID->"3ac064eb-a116-48f8-9840-b86c36816aad"],
+ "=",
+ Cell[BoxData[
+  RowBox[{
+   FractionBox["1", "2"], " ", "n", " ", 
+   RowBox[{"(", 
+    RowBox[{"1", "+", "n"}], ")"}]}]],
+  CellChangeTimes->{{3.764071908830346*^9, 3.764071937203559*^9}, 
+    3.764071974992813*^9},ExpressionUUID->
+  "67dcbc87-803b-4633-b81c-f52e16b814c6"],
+ ". Make a table with similar formulas for  ",
+ Cell[BoxData[
+  RowBox[{
+   UnderoverscriptBox["\[Sum]", 
+    RowBox[{"i", "=", "1"}], "n"], 
+   SuperscriptBox["i", "k"]}]],
+  CellChangeTimes->{{3.764071908830346*^9, 3.764071937203559*^9}},
+  ExpressionUUID->"1090c390-cb1c-4d8a-928b-87fc8d873631"],
+ ", with ",
+ Cell[BoxData[
+  FormBox["k", TraditionalForm]],ExpressionUUID->
+  "0c87b0aa-f492-4ab7-a81e-f1233dbcbee4"],
+ " ranging from 1 to 8."
+}], "Text",
+ CellChangeTimes->{3.764090542581546*^9},
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"74bceeeb-f6f8-4c5e-9170-da765ca8b861"],
+
+Cell[BoxData[""], "Input",ExpressionUUID->"63531a81-7418-46f1-8fb1-84cee1238392"],
+
+Cell[TextData[{
+ StyleBox["Problem 2\n",
+  FontWeight->"Bold"],
+ "Use the Factor function to prove that the product of four consecutive \
+numbers plus one is always a squared number."
+}], "Text",
+ CellChangeTimes->{{3.7640904110338516`*^9, 3.7640904544339156`*^9}},
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"6912e52d-f06f-4e43-af59-dc724a512e91"],
+
+Cell[BoxData[""], "Input",ExpressionUUID->"e04fba05-deea-4187-b5af-b4d1e470272c"],
+
+Cell[TextData[{
+ StyleBox["Problem 3\n",
+  FontWeight->"Bold"],
+ "Show that the formula ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["n", "2"], "+", "n", "+", "41"}], TraditionalForm]],
+  ExpressionUUID->"3d3b2590-37ba-4909-841f-1b11879d126d"],
+ " produces prime numbers for ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],ExpressionUUID->
+  "f8aef628-144e-4eb2-86dc-e09cedaad534"],
+ " from 0 to 39."
+}], "Text",
+ CellChangeTimes->{{3.7640904110338516`*^9, 3.7640904582932606`*^9}},
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"01da8d06-4abe-4a7e-a657-2f0186f04cf6"],
+
+Cell[BoxData[""], "Input",ExpressionUUID->"a1bdf78f-5c24-453c-90e1-abc6535fac37"],
+
+Cell[TextData[{
+ StyleBox["Problem 4\n",
+  FontWeight->"Bold"],
+ "11 is the first prime number with all digits equal to 1. Find the next one \
+(using a loop)."
+}], "Text",
+ CellChangeTimes->{{3.7640904110338516`*^9, 3.764090434421833*^9}, 
+   3.764090464513481*^9},
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"2df79dfe-2e98-468d-a34b-383443ddff33"],
+
+Cell[BoxData[""], "Input",ExpressionUUID->"17840953-b384-44a3-bf4b-2a894e963ae1"],
+
+Cell[TextData[{
+ StyleBox["Problem 5\n",
+  FontWeight->"Bold"],
+ "Define the function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]],ExpressionUUID->
+  "6900a36e-4092-4402-856d-39bee59e9249"],
+ " as follows:\n\n\t",
+ Cell[BoxData[{
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", "xy", ")"}], "=", 
+    RowBox[{
+     RowBox[{"f", "(", "x", ")"}], "+", 
+     RowBox[{"f", "(", "y", ")"}]}]}], 
+   TraditionalForm], "\[IndentingNewLine]", 
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", 
+     SuperscriptBox["x", "n"], ")"}], "=", 
+    RowBox[{"nf", "(", "x", ")"}]}], TraditionalForm], "\[IndentingNewLine]", 
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", "n", ")"}], "=", "0"}], TraditionalForm]}],
+  ExpressionUUID->"394dd00a-c9a0-41ec-9dfc-ee08ece681a2"],
+ "\n\nwhere ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],ExpressionUUID->
+  "82b2a6e0-acd0-46a6-a951-037f28336698"],
+ " is an integer. Show that\n\n\t",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", 
+     RowBox[{
+      UnderoverscriptBox["\[Product]", 
+       RowBox[{"k", "=", "1"}], "20"], 
+      RowBox[{
+       RowBox[{"k", "!"}], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         SubscriptBox["x", "k"], ")"}], "k"]}]}], ")"}], "=", 
+    RowBox[{
+     UnderoverscriptBox["\[Sum]", 
+      RowBox[{"k", "=", "1"}], "20"], 
+     RowBox[{"k", " ", 
+      RowBox[{"f", "(", 
+       SubscriptBox["x", "k"], ")"}]}]}]}], TraditionalForm]],ExpressionUUID->
+  "4ee7e40c-bdbe-4d63-a549-6dacd87d97b5"]
+}], "Text",
+ CellChangeTimes->{{3.7640904110338516`*^9, 3.764090434421833*^9}, {
+  3.7640904687009277`*^9, 3.764090469372796*^9}},
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"ed792c09-4eab-4456-945a-5e744be02679"],
+
+Cell[BoxData[""], "Input",ExpressionUUID->"9ed1096d-7cb4-4477-b088-5ef1b6ad9fec"],
+
+Cell[TextData[{
+ StyleBox["Problem 6\na) ",
+  FontWeight->"Bold"],
+ "Plot the function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", "x", ")"}], "=", 
+    RowBox[{
+     SuperscriptBox["e", 
+      RowBox[{"-", "x"}]], "/", 
+     RowBox[{"(", 
+      RowBox[{"2", "+", 
+       RowBox[{"sin", "(", 
+        SuperscriptBox["x", "2"], ")"}]}], ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"c2fb079f-7c6b-46a4-b5bb-3b44577b975f"],
+ " and its tangent line ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"g", "(", "x", ")"}], TraditionalForm]],ExpressionUUID->
+  "6bb76c96-7153-473b-8534-1a827d3f18e6"],
+ " at ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "=", "1"}], TraditionalForm]],ExpressionUUID->
+  "5155f882-9f41-4411-919c-337ad0cf8312"],
+ " for ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "\[Element]", 
+    RowBox[{"[", 
+     RowBox[{"0", ",", "3"}], "]"}]}], TraditionalForm]],ExpressionUUID->
+  "998219a5-3a37-418e-ab77-5e50a4766771"],
+ ".\n",
+ StyleBox["b)",
+  FontWeight->"Bold"],
+ " Calculate the integral of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", "x", ")"}], "-", 
+    RowBox[{"g", "(", "x", ")"}]}], TraditionalForm]],ExpressionUUID->
+  "df9ebd8f-9ac0-4a5b-921f-77dfd865ea84"],
+ " between ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "=", "0"}], TraditionalForm]],ExpressionUUID->
+  "69bf410e-ab1c-4c61-9f42-f923bab159be"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "=", "1"}], TraditionalForm]],ExpressionUUID->
+  "48fe6bbe-4369-4e34-b20b-fed09510f1da"],
+ " numerically with 100 digits."
+}], "Text",
+ CellChangeTimes->{{3.7640904110338516`*^9, 3.764090434421833*^9}, 
+   3.7640904751516657`*^9},
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"8c8c820e-bc3e-4d6b-ba30-e30bcc2a70cd"],
+
+Cell[BoxData[""], "Input",ExpressionUUID->"a6bc7519-b2d2-4946-91ae-7088dd067567"],
+
+Cell[TextData[{
+ StyleBox["Problem 7\n",
+  FontWeight->"Bold"],
+ StyleBox["Define the following piecewise function:\n",
+  FontWeight->"Plain"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\t", 
+    StyleBox[
+     RowBox[{
+      RowBox[{"f", "(", "x", ")"}], "=", 
+      TagBox[GridBox[{
+         {"\[Piecewise]", GridBox[{
+            {
+             RowBox[{"-", "x"}], Cell[TextData[StyleBox[
+             "if \[LeftBracketingBar]x\[RightBracketingBar]<1",
+              FontWeight->"Plain"]],ExpressionUUID->
+              "13ac8e3c-8252-4ab7-921b-0efeea89c784"]},
+            {
+             RowBox[{"sin", "(", "x", ")"}], 
+             RowBox[{
+              RowBox[{"if", " ", "1"}], "\[LessEqual]", 
+              RowBox[{"\[LeftBracketingBar]", "x", "\[RightBracketingBar]"}], 
+              "<", "2"}]},
+            {
+             RowBox[{"cos", "(", "x", ")"}], 
+             RowBox[{"otherwise", "."}]}
+           },
+           AllowedDimensions->{2, Automatic},
+           Editable->True,
+           
+           GridBoxAlignment->{
+            "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, 
+             "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+           
+           GridBoxItemSize->{
+            "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, 
+             "Rows" -> {{1.}}, "RowsIndexed" -> {}},
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.27999999999999997`], {
+                Offset[0.84]}, 
+               Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+               Offset[0.2], {
+                Offset[0.4]}, 
+               Offset[0.2]}, "RowsIndexed" -> {}},
+           Selectable->True]}
+        },
+        GridBoxAlignment->{
+         "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, 
+          "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}},
+           "RowsIndexed" -> {}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.35]}, 
+            Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}, "RowsIndexed" -> {}}],
+       "Piecewise",
+       DeleteWithContents->True,
+       Editable->False,
+       SelectWithContents->True,
+       Selectable->False]}],
+     FontWeight->"Plain"]}], TraditionalForm]],ExpressionUUID->
+  "5f079089-40b1-4c57-8180-1031c130c461"],
+ StyleBox["\na) ",
+  FontWeight->"Bold"],
+ StyleBox["Plot ",
+  FontWeight->"Plain"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]],
+  FontWeight->"Plain",ExpressionUUID->"dfbbba7c-60dc-40d5-9175-8e12c2a95f77"],
+ StyleBox[" between ",
+  FontWeight->"Plain"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "=", 
+    RowBox[{"-", "3"}]}], TraditionalForm]],
+  FontWeight->"Plain",ExpressionUUID->"69088bd1-cf7e-403e-8ebe-3e147d47cdce"],
+ StyleBox[" and ",
+  FontWeight->"Plain"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "=", "3"}], TraditionalForm]],
+  FontWeight->"Plain",ExpressionUUID->"cdd80eaf-6310-45b6-ab57-cec990a8791f"],
+ StyleBox[".",
+  FontWeight->"Plain"],
+ "\nb) ",
+ StyleBox["Calculate the integral of ",
+  FontWeight->"Plain"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"1", "/", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      SuperscriptBox[
+       RowBox[{"f", "(", "x", ")"}], "2"]}], ")"}]}], TraditionalForm]],
+  FontWeight->"Plain",ExpressionUUID->"0aeda6ba-477a-44c9-b398-a666db65657a"],
+ StyleBox[" between",
+  FontWeight->"Plain"],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "=", 
+    RowBox[{"-", "3"}]}], TraditionalForm]],
+  FontWeight->"Plain",ExpressionUUID->"79173223-8e50-4016-bcf0-e29b700bd612"],
+ StyleBox[" and ",
+  FontWeight->"Plain"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "=", "3"}], TraditionalForm]],
+  FontWeight->"Plain",ExpressionUUID->"fbf40509-8820-4a22-96ef-8019fba82da7"],
+ " (symbolically)."
+}], "Text",
+ CellChangeTimes->{{3.7640904110338516`*^9, 3.764090434421833*^9}, {
+  3.764090487673134*^9, 3.7640905110547733`*^9}, {3.7640910407603655`*^9, 
+  3.764091056350889*^9}, {3.764460229859948*^9, 3.764460267377438*^9}, {
+  3.764460345524923*^9, 3.764460373672909*^9}},
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"a008fa9d-c782-4aaf-bcf6-1f3f0303334d"],
+
+Cell[BoxData[""], "Input",ExpressionUUID->"8d5ed793-fd79-4830-8801-bb788ad61585"]
+},
+WindowSize->{870, 779},
+WindowMargins->{{81, Automatic}, {Automatic, 85}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 487, 13, 160, "Text",ExpressionUUID->"5dc15284-732d-4441-9989-a205be82a196"],
+Cell[1048, 35, 1196, 35, 78, "Text",ExpressionUUID->"74bceeeb-f6f8-4c5e-9170-da765ca8b861"],
+Cell[2247, 72, 81, 0, 28, "Input",ExpressionUUID->"63531a81-7418-46f1-8fb1-84cee1238392"],
+Cell[2331, 74, 361, 8, 72, "Text",ExpressionUUID->"6912e52d-f06f-4e43-af59-dc724a512e91"],
+Cell[2695, 84, 81, 0, 28, "Input",ExpressionUUID->"e04fba05-deea-4187-b5af-b4d1e470272c"],
+Cell[2779, 86, 596, 17, 72, "Text",ExpressionUUID->"01da8d06-4abe-4a7e-a657-2f0186f04cf6"],
+Cell[3378, 105, 81, 0, 28, "Input",ExpressionUUID->"a1bdf78f-5c24-453c-90e1-abc6535fac37"],
+Cell[3462, 107, 361, 9, 72, "Text",ExpressionUUID->"2df79dfe-2e98-468d-a34b-383443ddff33"],
+Cell[3826, 118, 81, 0, 28, "Input",ExpressionUUID->"17840953-b384-44a3-bf4b-2a894e963ae1"],
+Cell[3910, 120, 1733, 54, 255, "Text",ExpressionUUID->"ed792c09-4eab-4456-945a-5e744be02679"],
+Cell[5646, 176, 81, 0, 28, "Input",ExpressionUUID->"9ed1096d-7cb4-4477-b088-5ef1b6ad9fec"],
+Cell[5730, 178, 1746, 58, 96, "Text",ExpressionUUID->"8c8c820e-bc3e-4d6b-ba30-e30bcc2a70cd"],
+Cell[7479, 238, 81, 0, 28, "Input",ExpressionUUID->"a6bc7519-b2d2-4946-91ae-7088dd067567"],
+Cell[7563, 240, 4341, 122, 179, "Text",ExpressionUUID->"a008fa9d-c782-4aaf-bcf6-1f3f0303334d"],
+Cell[11907, 364, 81, 0, 28, "Input",ExpressionUUID->"8d5ed793-fd79-4830-8801-bb788ad61585"]
+}
+]
+*)
+
