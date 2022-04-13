@@ -22,11 +22,11 @@ Cell[TextData[{
  StyleBox["Math 124 - Programming for Mathematical Applications\n",
   FontSize->24,
   FontWeight->"Bold"],
- "UC Berkeley, Spring 2021\n\n",
+ "UC Berkeley, Spring 2022\n\n",
  StyleBox["Homework 12\n",
   FontSize->18,
   FontWeight->"Bold"],
- "Due Friday April 28\n"
+ "Due Wednesday April 27\n"
 }], "Text",
  CellChangeTimes->{{3.7640904110338516`*^9, 3.7640904498870535`*^9}, {
   3.764090541800277*^9, 3.764090579122822*^9}, {3.7640906222464743`*^9, 
