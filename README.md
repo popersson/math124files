@@ -1,4 +1,4 @@
 ### UC Berkeley Math 124 - Programming for Mathematical Applications
-Spring 2021
+Fall 2025
 
-See syllabus on the official course web page: http://persson.berkeley.edu/math124
+See syllabus on the official course web page: https://persson.berkeley.edu/math124
